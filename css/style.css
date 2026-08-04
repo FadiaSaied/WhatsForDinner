@@ -1,0 +1,507 @@
+@font-face {
+  font-family: "inter";
+  src: url(../fonts/Inter_18pt-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(../fonts/Inter_18pt-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(../fonts/Inter_18pt-Bold.ttf);
+  font-weight: 700;
+}
+
+:root {
+  --fontFamily: "inter";
+  --mainColor: #f54900;
+  --bgColor: #ff6900;
+  --darkColor: #101828;
+  --transition: 0.3s;
+  --whiteColor: #ffffff;
+  --border-radius: 1.25rem;
+}
+
+body {
+  font-family: var(--fontFamily);
+  background-color: #fffaec;
+}
+
+.shadwo{
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+            0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+#mynav .myimg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ffbc72;
+  object-fit: cover;
+}
+
+#mynav {
+  background-color: var(--whiteColor);
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+#mynav .logoIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, var(--bgColor), #fb2c36);
+  color: var(--whiteColor);
+}
+
+#mynav .logoText h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--darkColor);
+  margin: 0;
+  padding: 0;
+}
+#mynav .logoText span {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #6a7282;
+  margin-top: -1px;
+  display: block;
+}
+
+#mynav .navbarLinks li a,
+#mynav .navbarLinks li i {
+  color: #4a5565;
+  transition: var(--transition);
+}
+
+#mynav .navbarLinks li:hover a,
+#mynav .navbarLinks li:hover i {
+  color: #e55c00;
+}
+
+#mynav .navbarLinks i {
+  cursor: pointer;
+}
+
+#mynav .mybtn {
+  box-shadow: none;
+  border: none;
+  transition: var(--transition);
+}
+
+#mynav .iconMenu {
+  background-image: none;
+  color: #4a5565;
+  font-size: 24px;
+  transition: var(--transition);
+}
+#mynav .iconMenu:hover {
+  color: var(--mainColor);
+}
+
+#header {
+  padding: 30px 60px 30px;
+    
+}
+#header .myimage {
+  padding: 0;
+ 
+}
+
+
+#header .headerImg {
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+
+#header .headerImg img {
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+#header .rating {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  background-color: var(--whiteColor);
+  padding: 0.625rem 0.9375rem;
+  border-radius: var(--border-radius);
+}
+
+#header .rating span:nth-child(2) {
+  color: var(--darkColor);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#header .rating span:nth-child(3) {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #6a7282;
+}
+
+#header .info {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--whiteColor);
+  padding: 25px 20px;
+  border-radius: var(--border-radius);
+  width: 90%;
+}
+
+#header .mealInfo .clock {
+  color: var(--bgColor);
+}
+
+#header .mealInfo .fire {
+  color: #fb2c36;
+}
+
+#header .mealInfo .users {
+  color: #2b7fff;
+}
+
+#header .info span:nth-child(2) {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #6a7282;
+}
+
+#header .info span:nth-child(3) {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--darkColor);
+}
+
+
+#header .mymenu {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: var(--whiteColor);
+  padding: 70px 30px 20px;
+  position: relative;
+  height: 800px;
+  scrollbar-width: thin;
+  scrollbar-color: #ffbfb2 transparent;
+
+  overflow-y: auto;
+
+}
+
+#header .row{
+  border: 2px solid #FFEDD4;
+}
+
+#header .mymenu::-webkit-scrollbar-button{
+  display: none;
+}
+
+#header .menuInfo .badgeMenu {
+  position: absolute;
+  left: 15px;
+  top: 40px;
+}
+
+#header .badgeMenu span:nth-child(1) {
+  background-color: #dbfce7;
+  color: #008236;
+}
+
+#header .badgeMenu span:nth-child(2) {
+  background-color: #dbeafe;
+  color: #1447e6;
+}
+
+#header .caption h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--darkColor);
+}
+#header .caption p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #4a5565;
+}
+
+#header .menuIcon span {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffedd4;
+  color: var(--mainColor);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+#header .menuIcon span:hover {
+  background-color: #ffd6a7;
+}
+
+#header .ingredients {
+  background-color: #fff8ec;
+  padding: 20px;
+  border-radius: 15px;
+
+}
+#header .ingredients ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+#header .ingredients .ingredient-number {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--bgColor);
+  color: var(--whiteColor);
+  font-size: 12px;
+  font-weight: 700;
+}
+#header .instructions ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+#header .instructions .instructions-number {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: var(--bgColor);
+  color: var(--whiteColor);
+  font-size: 20px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+#header .ingredients span:nth-child(2),
+#header .instructions span:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #364153;
+}
+
+#header .nutrition .content {
+  background-color:#F9FAFB;
+  padding: 15px 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+#header .nutrition .information span:nth-child(1) {
+  font-size: 16px;
+  font-weight: 500;
+  color: #364153;
+}
+
+#header .nutrition .content > span {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--darkColor);
+}
+
+#header .nutrition i {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header .nutrition .fire {
+  background-color: #ffedd4;
+  color: var(--mainColor);
+}
+#header .nutrition .fa-wheat-awn {
+  background-color: #fef9c2;
+  color: #d08700;
+}
+
+#header .nutrition .fa-seedling {
+  background-color: #dbfce7;
+  color: #00a63e;
+}
+
+#header .nutrition .fa-dumbbell {
+  background-color: #DBEAFE;
+  color: #155dfc;
+}
+
+#header .nutrition .fa-droplet {
+  background-color: #ffe2e2;
+  color: #e7000b;
+}
+
+#header .nutrition .fa-cube {
+  background-color: #FCE7F3;
+  color: #e60076;
+}
+
+#header .chefTips ul li {
+  margin-bottom: 15px;
+  background-color: #fffbeb;
+  padding: 20px 15px;
+  border-radius: 10px;
+  border-left: 4px solid #ffb900;
+}
+#header .chefTips span:nth-child(1) {
+  background-color: #e17100;
+  color: var(--whiteColor);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+#header .chefTips span:nth-child(2) {
+  font-size: 16px;
+  font-weight: 400;
+  color: #364153;
+}
+#header .mealBtn {
+  background: linear-gradient(to right, var(--bgColor), #fb2c36);
+  box-shadow:
+    0 10px 15px -3px #0000001a,
+    0 4px 6px -4px #0000001a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-top: 20px;
+  padding: 5px 20px;
+  transition: var(--transition);
+  width: fit-content;
+}
+
+#header .mealBtn:hover {
+  background: linear-gradient(to right, var(--mainColor), #e7000b);
+  box-shadow:
+    0 20px 25px -5px #0000001a,
+    0 8px 10px -6px #0000001a;
+  transform: scale(1.05);
+}
+
+#header .mealBtn button {
+  color: var(--whiteColor);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+}
+
+#header .chooseBtn {
+  color: #364153;
+  font-size: 16px;
+  font-weight: 600;
+  transition: var(--transition);
+  position: relative;
+}
+#header .chooseBtn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--mainColor);
+  height: 2px;
+  width: 100%;
+  display: none;
+  transition: var(--transition);
+}
+
+#header .chooseBtn.active::before {
+  display: block;
+}
+#header .nav-pills .chooseBtn.active,
+ #header  .nav-pills .show > .chooseBtn {
+  color: var(--mainColor);
+  background-color: transparent;
+}
+
+#header .myborder {
+  border-bottom: 1px solid #e5e7eb;
+}
+#header .tab-content {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 10px 0 40px;
+  height: 100%;
+  width: 100%;
+}
+
+#header .instrctionHeight {
+  height: 400px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ffbdb2 transparent;
+}
+
+#header .warning {
+  background-color: #fef2f2;
+  padding: 20px 10px;
+  border-left: 4px solid #fb2c36;
+  border-radius: 10px;
+}
+
+#header .warning span {
+  color: #fb2c36;
+}
+
+#header .warning h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #9f0712;
+  margin-bottom: 0;
+}
+
+#header .warning p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #e7000b;
+}
+
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+  #mynav .navbarLinks {
+    border-top: 1px solid #ffedd4;
+  }
+  #mynav .navbarLinks li {
+    margin-top: 8px;
+  }
+  #mynav .myimg {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+  #header .headerImg {
+    width: 100%;
+    height: 800px;
+  }
+
+
+#header .mymenu {
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 25px;
+}
+
+#header .headerImg img {
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 0;
+}
+}
