@@ -615,7 +615,6 @@ let mealList = [
   classicBeefBurger,
 ];
 
-
 function displayData(meal) {
   let time = "";
   if (meal.cookTime > "45 min") {
@@ -657,7 +656,7 @@ function displayData(meal) {
                         </li>`;
   }
 
- let data = `<div class="col-12 col-lg-5 myimage">
+  let data = `<div class="col-12 col-lg-5 myimage">
             <div class="innerImg">
               <div class="headerImg">
                 <img
@@ -954,10 +953,16 @@ function displayData(meal) {
 
 displayData(mealList[1]);
 
+let currentIndex = 1;
 function chooseMeal() {
-  let chooseMealRandom = Math.floor(Math.random() * mealList.length);
+  let chooseMealRandom;
+  do {
+    chooseMealRandom = Math.floor(Math.random() * mealList.length);
+  } while (currentIndex === chooseMealRandom);
 
-  let mealNumber = mealList[chooseMealRandom];
+  currentIndex = chooseMealRandom;
+
+  let mealNumber = mealList[currentIndex];
 
   displayData(mealNumber);
 }
