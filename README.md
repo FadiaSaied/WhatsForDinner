@@ -23,5 +23,4 @@ My 8th assignment during the Front-End Development track at Route Academy.
 * Extended Preparation Time Warning
 
 ## Live Demo
-
-https://fadiasaied.github.io/-What-s-For-Dinner/
+https://fadiasaied.github.io/WhatsForDinner/
